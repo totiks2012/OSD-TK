@@ -2,6 +2,7 @@
      Лёгкий текстовый OSD на Tcl/Tk: без демона, с независимыми плашками, стеком, таймерами и UTF-8 - Lightweight Tcl/Tk text OSD: daemonless,  independent stacked panels, timers and UTF-8.
 
 Созданно при поддержке Gemini-chat_ревью
+
 А так же cli агента Deepseek Flash 4.1 1017
 
 # OSD — лёгкий текстовый OSD на Tcl/Tk
