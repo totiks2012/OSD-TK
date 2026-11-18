@@ -1,0 +1,58 @@
+# osd.conf.example — эталонный конфиг OSD.
+# Сам по себе НЕ загружается: osd ищет только osd.conf / --config / $OSD_CONF.
+# Скопируйте нужные ключи в конфиг своего скрипта и передавайте его:
+#   osd --config /path/to/script.conf
+#
+# allow_multiple:
+#   1 — каждый вызов создаёт новую плашку (несколько плашек с одним --key разрешены)
+#   0 — повторный вызов с тем же --key заменяет текст существующей плашки
+#       и обновляет её таймер duration; новые плашки не создаются
+allow_multiple=1
+
+# Время показа, секунды. 0 — висеть до ПКМ/Esc (или замены, если allow_multiple=0).
+duration=3
+
+# top-left | top-center | top-right
+# middle-left | center | middle-right
+# bottom-left | bottom-center | bottom-right
+position=top-center
+
+# Отступ от края экрана, px
+margin=10
+
+# Шрифт Tk: {family} size [style]
+font={DejaVu Sans} 14
+
+# Цвета
+bg=#1d2021
+fg=#ebdbb2
+
+# Рамка и внутренние отступы, px
+border=1
+padding=12
+
+# Максимальная ширина текста, px (0 — автоматически)
+wraplength=640
+
+# Максимальная высота окна, px (0 — автоматически)
+max_height=400
+
+# Фиксированный размер окна, px (0 — по содержимому)
+win_w=0
+win_h=0
+
+# Уменьшать шрифт/обрезать текст под окно: 1 — да, 0 — нет
+shrink=1
+min_font_size=8
+
+# Выравнивание текста: left | center | right
+align=left
+
+# Отступ между плашками в одной группе position, px
+gap=8
+
+# Максимум одновременно видимых плашек
+max_panels=5
+
+# Минимальное время показа при вытеснении, мс
+min_show=500
