@@ -3,7 +3,7 @@
 
 Созданно при поддержке Gemini-chat_ревью
 
-А так же cli агента Deepseek Flash 4.1 1017
+А так же CLI агента Deepseek Flash 4.1 1017
 
 # OSD — лёгкий текстовый OSD на Tcl/Tk
 
